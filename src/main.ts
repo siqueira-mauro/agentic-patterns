@@ -1,6 +1,8 @@
-import './helpers/string-colors.js';
-import { getMessageFromModel } from './actions/get-message-model.js';
+import './helpers/string-colors.ts';
+import { withoutTool, withTools } from './patterns/tool-use/tool-use.ts';
 
 console.clear();
 
-await getMessageFromModel();
+console.log('Starting the application...');
+
+await withTools();

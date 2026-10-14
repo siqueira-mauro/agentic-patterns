@@ -4,7 +4,7 @@
  */
 
 import { APICallError, generateText } from 'ai';
-import { createTracer, model } from '../helpers/index.js';
+import { createTracer, model } from '../helpers/index.ts';
 
 // Función básica para verificar si el modelo está funcionando
 export async function getMessageFromModel() {

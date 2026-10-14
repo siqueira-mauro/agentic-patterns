@@ -1,3 +1,3 @@
-export * from './create-tracer.js';
-export * from './selected-model.js';
-export * from './string-colors.js';
+export * from './create-tracer.ts';
+export * from './selected-model.ts';
+export * from './string-colors.ts';
