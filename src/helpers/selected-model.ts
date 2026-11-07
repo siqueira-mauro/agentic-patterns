@@ -20,7 +20,6 @@ import { google } from '@ai-sdk/google';
 import { ollama } from 'ollama-ai-provider-v2';
 
 // Groq:
-// export const model = groq('openai/gpt-oss-20b');
 // export const model = groq('openai/gpt-oss-120b');
 
 // Anthropic:
@@ -30,7 +29,18 @@ import { ollama } from 'ollama-ai-provider-v2';
 // export const model = openai('gpt-5-mini');
 
 // Gemini:
-// export const model = google('gemini-2.5-flash');
+// export const model = google('gemini-3.8-flash');
+export const model = google('gemini-3.5-flash-lite');
 
 // Ollama:
-export const model = ollama('qwen2:0.5b');
+// export const model = ollama('qwen2:0.5b');
+
+// export enum Model {
+//     // Local models:
+//     OLLAMA_QWEN2_0_5B = 'qwen2:0.5b',
+//     // Gemini models:
+//     GEMINI_3_5_FLASH = 'gemini-3.8-flash',
+//     GEMINI_3_5_FLASH_LITE = 'gemini-3.5-flash-lite',
+
+//     DEFAULT = GEMINI_3_5_FLASH
+// }
